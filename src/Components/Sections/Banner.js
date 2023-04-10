@@ -3,6 +3,7 @@ import Taglist from "../Taglist";
 import Link from "next/link";
 import banner1 from "../../../public/banner.jpg";
 import Image from "next/image";
+import { BsCalendarDate, BsClock } from "react-icons/bs";
 
 const Banner = () => {
   return (
@@ -26,21 +27,43 @@ const Banner = () => {
               on.
             </p>
           </div>
+          <div className="duration mt-5 flex">
+            <div className="date flex items-center mr-4">
+              <span className="mr-3">
+                <BsCalendarDate />
+              </span>
+              May 2, 2022
+            </div>
+            <div className="time flex items-center">
+              <span className="mr-3">
+                <BsClock />
+              </span>
+              4 min read
+            </div>
+          </div>
         </div>
         <div className="col-span-2">
-          <div className="img-container p-4 rounded-md bg-white shadow-cs overflow-hidden group">
-            <Image
-              width={0}
-              className="object-cover rounded-md group-hover:scale-105"
-              src={banner1}
-              alt="banner image"
-              style={{
-                width: "100%",
-                height: "350px",
-                objectFit: "cover",
-                overflow: "hidden",
-              }}
-            />
+          <div
+            style={{ width: "100%", height: "350px" }}
+            className="img-container p-4 rounded-md bg-white shadow-cs  overflow-hidden"
+          >
+            <Link
+              style={{ width: "100%", height: "100%" }}
+              className="overflow-hidden group block rounded-md"
+              href="/"
+            >
+              <Image
+                width={0}
+                className="object-cover rounded-md group-hover:scale-105 transition-all duration-75"
+                src={banner1}
+                alt="banner image"
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  transformOrigin: "center",
+                }}
+              />
+            </Link>
           </div>
         </div>
       </div>
