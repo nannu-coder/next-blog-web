@@ -28,14 +28,14 @@ const Banner = () => {
             </p>
           </div>
           <div className="duration mt-5 flex">
-            <div className="date flex items-center mr-4">
-              <span className="mr-3">
+            <div className="date flex items-center mr-4 text-[#808495]">
+              <span className="mr-[7px]">
                 <BsCalendarDate />
               </span>
               May 2, 2022
             </div>
-            <div className="time flex items-center">
-              <span className="mr-3">
+            <div className="time flex items-center text-[#808495]">
+              <span className="mr-[7px]">
                 <BsClock />
               </span>
               4 min read
@@ -44,7 +44,7 @@ const Banner = () => {
         </div>
         <div className="col-span-2">
           <div
-            style={{ width: "100%", height: "350px" }}
+            style={{ width: "100%", height: "400px" }}
             className="img-container p-4 rounded-md bg-white shadow-cs  overflow-hidden"
           >
             <Link
