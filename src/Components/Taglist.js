@@ -4,7 +4,7 @@ import { BsDot } from "react-icons/bs";
 
 const Taglist = ({ name, color }) => {
   return (
-    <div className="flex">
+    <div className="flex mr-2 my-2">
       <Link
         className="bg-[#EFF1F4] px-4 py-1 rounded-full flex items-center"
         href="/"
